@@ -1,0 +1,13 @@
+# config
+avatar: /assets/images/avatar.png
+
+navigation:
+- name: Home
+  slug: home
+  url: /
+- name: Blog
+  slug: blog
+  url: /blog
+- name: Links
+  slug: links
+  url: /links

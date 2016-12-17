@@ -1,0 +1,179 @@
+// Content title
+.page-header {
+  padding-top: $gap-m;
+  margin-bottom: $gap-l;
+  text-align: center;
+}
+
+.page-content {
+  margin-bottom: $gap-xl;
+
+  a:not([id^=fnref]) {
+    border-bottom: 1px dashed $secondary-color;
+  }
+
+  & > table {
+    display: block;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    overflow: auto;
+
+    tr {
+      &:nth-child(2n) {
+        background-color: #f8f8f8;
+      }
+
+      th, td {
+        padding: $gap-s $gap-m;
+        border: 1px solid #ddd;
+      }
+    }
+  }
+
+  blockquote {
+    padding-left: $gap-l;
+    border-left: 2px solid $secondary-color;
+  }
+
+  ol, ul {
+    padding-left: $gap-l;
+    margin-bottom: $gap-l;
+
+    li {
+      // list-style-position: inside;
+      // overflow: hidden;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  li ul, li ol {
+    margin-bottom: 0;
+  }
+
+  pre, code {
+    font-family: $font-family-mono;
+    font-size: $font-size-code;
+  }
+
+  pre {
+    line-height: $line-height-code;
+  }
+
+  .highlight {
+    background: rgba(0, 0, 0, .04);
+    overflow: auto;
+
+    table {
+      margin: 0;
+      border-spacing: 0;
+    }
+
+    pre {
+      margin: $gap-m;
+      overflow: visible;
+    }
+  }
+
+  code {
+    background: rgba(0, 0, 0, .04);
+    padding: 0.1rem 0.2rem;
+  }
+
+  hr {
+    margin: 0 auto $gap-xl;
+    padding-top: $gap-l;
+    width: 6rem;
+    border: none;
+    border-bottom: 2px solid $secondary-color;
+    opacity: .5;
+
+    &.footnotes-sep {
+      margin-top: $gap-l;
+    }
+  }
+
+  sub, sup {
+    font-size: $font-size-sub-sup;
+
+    a {
+      color: $highlight-color;
+    }
+  }
+
+  // Images
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  // fix img margin-bottom without p tag warp
+  & > img {
+    margin-bottom: $gap-l;
+  }
+
+  figure {
+    // figure image
+    @media (min-width: 30rem) {
+      &.left, &.right {
+        width: 40%;
+      }
+
+      &.left {
+        float: left;
+        margin-right: $gap-l;
+      }
+
+      &.right {
+        float: right;
+        margin-left: $gap-l;
+      }
+    }
+
+    @media (min-width: 60rem) {
+      &.left, &.right {
+        width: 50%;
+      }
+
+      &.left {
+        margin-left: -25%;
+      }
+
+      &.right {
+        margin-right: -25%;
+      }
+    }
+
+    figcaption {
+      font-size: $font-size-small;
+      color: $secondary-color;
+      text-align: center;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  // Footnotes
+  .footnotes {
+    font-size: $font-size-footnotes;
+    color: $secondary-color;
+
+    p {
+      margin-bottom: $gap-m;
+
+      a {
+        border: none;
+
+        &.footnote-backref {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

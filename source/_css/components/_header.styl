@@ -1,0 +1,70 @@
+.site-header {
+  position: relative;
+  width: 100%;
+  margin-bottom: $gap-l;
+  padding-top: $gap-l;
+
+  span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: all .24s;
+
+    &.b {
+      color: $primary-color-invert;
+      background: $background-invert;
+
+      &:hover {
+        color: lighten($primary-color-invert, 80%);
+        background: darken($background-invert, 80%);
+      }
+    }
+
+    &.w {
+      color: $primary-color;
+      background: $background;
+    }
+  }
+
+  // Site logo
+  .site-logo {
+    display: flex;
+    width: 180px;
+
+    span {
+      &:nth-child(2), &:nth-child(3) {
+        border-bottom: 1px solid $background-invert;
+      }
+
+      &:nth-child(3), &:nth-child(4) {
+        border-top: 1px solid $background-invert;
+      }
+    }
+  }
+
+  // Switch button
+  .site-nav-switch {
+    position: absolute;
+    top: $gap-l;
+    right: 0;
+    cursor: pointer;
+    transition: all .24s;
+    z-index: 65535;
+
+    &:hover {
+      color: inherit;
+    }
+
+    &.active {
+      transform: rotate(90deg);
+    }
+
+    &.fixed {
+      position: fixed;
+      top: $gap-l;
+      right: $gap-l;
+    }
+  }
+}
