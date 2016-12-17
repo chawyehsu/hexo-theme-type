@@ -4,7 +4,7 @@
     </div>
     <ul class="post-list">
     {#- All posts but hidden -#}
-    {%- for post in site.posts -%}
+    {%- for post in site.posts.sort('date', 'desc') -%}
       {%- if post.hidden != true -%}
       <li class="post-list-item">
         <a href="{{ url_for(post.path) }}">
