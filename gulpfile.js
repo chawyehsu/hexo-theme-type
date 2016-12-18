@@ -47,4 +47,6 @@ gulp.task('watch', function () {
   gulp.watch(['source/_**/**/*'], ['build:css']);
 });
 
-gulp.task('default', ['build:css', 'watch']);
+gulp.task('default', ['build:css']);
+
+gulp.task('dev', ['build:css', 'watch']);

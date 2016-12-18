@@ -2,8 +2,9 @@
   "name": "hexo-theme-type",
   "version": "0.5.0",
   "description": "Yet another hexo theme.",
-  "main": "gulpfile.js",
+  "main": "gulpfile",
   "scripts": {
+    "start": "gulp dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
