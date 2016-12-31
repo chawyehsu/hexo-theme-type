@@ -1,0 +1,38 @@
+// Links style
+// from http://xsinger.me
+// --------------------------------------------
+.links > ul {
+  li {
+    width: 115px;
+    white-space: nowrap;
+    float: left;
+    margin: 10px;
+    border-left: 3px solid #C48F33;
+    display: block;
+    transition: all .5s;
+
+    &:nth-child(4n + 1) {
+      border-left-color: rgba(32,78,200,0.65);
+    }
+
+    &:nth-child(4n + 2) {
+      border-left-color: rgba(112,162,96,0.65);
+    }
+
+    &:nth-child(4n + 3) {
+      border-left-color: rgba(208,231,70,0.65);
+    }
+
+    &:hover {
+      background-image: linear-gradient(to right, #fcfcfc, #f2f2f2);
+      background-position: 45px 0;
+    }
+
+    a {
+      display: block;
+      color: #666;
+      border-bottom: none;
+      text-align: center;
+    }
+  }
+}

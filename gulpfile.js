@@ -9,6 +9,7 @@ var postcss = require('gulp-postcss');
 var postcssImport = require('postcss-import');
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
+var uglify = require('gulp-uglify');
 
 var target = 'source/assets/';
 
@@ -28,6 +29,7 @@ gulp.task('copy:fonts', ['copy:image'], function () {
 
 gulp.task('build:js', ['copy:fonts'], function () {
   return gulp.src('source/_js/*.js')
+    .pipe(uglify())
     .pipe(gulp.dest(target + 'js'));
 });
 
