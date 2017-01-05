@@ -1,3 +1,3 @@
 <footer id="site-footer" class="site-footer wrap">
-  <p>&copy; 2016 h404bi, unless otherwise noted.</p>
+  <p>&copy; {{ date(Date.now(), 'YYYY') }} {{ config.author }}, unless otherwise noted.</p>
 </footer>
