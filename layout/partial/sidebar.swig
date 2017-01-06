@@ -18,7 +18,8 @@
   </div>
   {% endif -%}
   {#- Bio -#}
-  <div class="site-bio {% if display_toc %}{% else %}show{% endif %}" style="display: {% if display_toc %}none{% else %}block{% endif %}">
+  <div class="site-bio {% if display_toc %}{% else %}show{% endif %}"
+  style="display: {% if display_toc %}none{% else %}block{% endif %}">
     <div class="about-me">
       <div class="avatar">
         <img src="{{ theme.avatar }}" />
@@ -49,4 +50,4 @@
     </div>
   </div>
 </div>
-<!-- hanabi: loadingbar & sidebar credit to Art Chen, see https://github.com/artchen -->
+<!-- loadingbar & sidebar credit to Art Chen, see https://github.com/artchen -->

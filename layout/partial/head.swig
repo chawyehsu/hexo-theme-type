@@ -4,7 +4,6 @@
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ config.title }}</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#009688">
   <link rel="shortcut icon" href="{{ url_for('favicon.ico') }}">
   {{ css('assets/css/style.css') }}
   <script>function setLoadingBarProgress(num){document.getElementById('loading-bar').style.width=num+"%";}</script>
