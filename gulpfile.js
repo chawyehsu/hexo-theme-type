@@ -1,15 +1,13 @@
 "use strict";
 
 var gulp = require('gulp');
-var del = require('del');
-var flatten = require('gulp-flatten');
-var rename = require('gulp-rename');
 var stylus = require('gulp-stylus');
 var postcss = require('gulp-postcss');
 var postcssImport = require('postcss-import');
 var autoprefixer = require('autoprefixer');
-var cssnano = require('cssnano');
 var uglify = require('gulp-uglify');
+var cssnano = require('cssnano');
+var del = require('del');
 
 var target = 'source/assets/';
 
