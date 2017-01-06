@@ -1,6 +1,6 @@
 # config
 avatar: /assets/images/avatar.png
-boiurl: /about
+biourl: /about
 
 menu:
 - name: Home
