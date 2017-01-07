@@ -1,0 +1,2 @@
+Hexo theme, Type!
+---
