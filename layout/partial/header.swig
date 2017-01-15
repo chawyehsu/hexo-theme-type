@@ -1,4 +1,4 @@
-<header id="site-header" class="site-header">
+<header id="site-header" class="site-header wrap">
   <a class="site-logo" href="{{ url_for('/blog') }}">
     <span class="b">H</span>
     <span class="w">4</span>
