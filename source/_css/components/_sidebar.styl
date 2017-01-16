@@ -5,12 +5,12 @@
   width: 280px;
   height: 100%;
   padding: 20px;
-  background-image: url("../images/sidebar-bg.png");
+  background-color: $background-invert;
   background-repeat: repeat;
   background-size: 102px 102px;
   overflow: hidden;
   transform: translate3d(280px, 0, 0);
-  transition: all 0.24s ease;
+  transition: all .24s ease;
   z-index: 1;
 
   // Common .dark-btn
@@ -20,8 +20,8 @@
     font-size: .8889rem;
     color: $tertiary-color;
     text-align: center;
-    border: 1px solid black;
-    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, .3);
 
     &:hover {
       background-color: $highlight-color;
@@ -48,7 +48,7 @@
     margin-bottom: 20px;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.24s ease;
+    transition: all .24s ease;
 
     &.show {
       opacity: 1;
@@ -82,13 +82,13 @@
   & > .site-toc {
     position: relative;
     padding: 12px 10px 15px 10px;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, .1);
     border: 1px solid lighten(black, 15%);
     max-height: 450px;
     overflow: auto;
     opacity: 0;
     transform: translate3d(0px, -20px, 0px);
-    transition: all 0.24s ease;
+    transition: all .24s ease;
 
     &.show {
       transform: translate3d(0px, 0px, 0px);
@@ -126,7 +126,7 @@
     position: relative;
     opacity: 0;
     transform: translate3d(0px, -20px, 0px);
-    transition: all 0.24s ease;
+    transition: all .24s ease;
 
     &.show {
       opacity: 1;
@@ -174,21 +174,16 @@
   .about-me {
     text-align: center;
     padding: 12px 5px 15px 5px;
-    background: rgba(0,0,0,0.1);
-    border: 1px solid lighten(black, 15%);
-    transition: background 0.24s, border-color 0.24s;
-
-    &:hover {
-      background: rgba(0,0,0,0.2);
-      border-color: lighten(black, 10%);
-    }
+    background: rgba(0, 0, 0, .2);
+    border: 1px solid #000;
+    transition: background .24s, border-color .24s;
 
     .avatar {
       display: block;
       width: 96px;
       height: 96px;
       margin: 4px auto;
-      background: rgba(0,0,0,0.3);
+      background: rgba(0, 0, 0, .3);
       border-radius: 50%;
       padding: 3px;
       overflow: hidden;

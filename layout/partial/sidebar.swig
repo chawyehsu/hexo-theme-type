@@ -50,4 +50,5 @@
     </div>
   </div>
 </div>
-<!-- loadingbar & sidebar credit to Art Chen, see https://github.com/artchen -->
+{#- DO NOT REMOVE BELOW COMMENT, THANKS! -#}
+<!-- Loadingbar & sidebar credit to Art Chen, see https://github.com/artchen -->

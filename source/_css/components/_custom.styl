@@ -1,3 +1,19 @@
+// Site logo
+.site-logo {
+  display: flex;
+  width: 180px;
+
+  span {
+    &:nth-child(2), &:nth-child(3) {
+      border-bottom: 1px solid $background-invert;
+    }
+
+    &:nth-child(3), &:nth-child(4) {
+      border-top: 1px solid $background-invert;
+    }
+  }
+}
+
 // Links style
 // from http://xsinger.me
 // --------------------------------------------
