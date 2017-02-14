@@ -1,22 +1,4 @@
 <script src="https://cdn.staticfile.org/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
 {{ js(['assets/js/main.js']) }}
-{%- if config.disqus_shortname && page.comments -%}
-<script>
-  var disqus = {
-    load : function disqus(){
-      var disqus_shortname = '{{ config.disqus_shortname }}';
-      var disqus_url = '{{ url }}';
-      var disqus_title = {{ JSON.stringify(page.title) }};
-
-      (function() {
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-      $('#load-disqus').remove(); // Remove load button after loading.
-    }
-  }
-</script>
-{%- endif -%}
+{{ partial('scripts/disqus') }}
+{{ partial('scripts/google-analytics') }}
