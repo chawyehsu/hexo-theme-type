@@ -1,14 +1,20 @@
 <header id="site-header" class="site-header wrap">
-  <a class="site-logo" href="{{ url_for(theme.root || config.root) }}">
-    {#- Change below into your own logo -#}
-    <span class="b">H</span>
-    <span class="w">4</span>
-    <span class="w">0</span>
-    <span class="w">4</span>
-    <span class="b">B</span>
-    <span class="b">I</span>
+  <a class="site-title" href="{{ url_for(theme.root || config.root) }}">
+    {{ config.domain or config.title }}
   </a>
-  <a id="site-nav-switch" class="site-nav-switch">
-    <span class="icon icon-menu b"></span>
-  </a>
+  {%- if theme.menu -%}
+  <nav class="site-nav">
+    <ul>
+    {%- for name, path in theme.menu -%}
+      <li>
+      {%- if url_for(page.path)|replace('/index.html', '') === url_for(path) -%}
+        <a class="active" href="{{ url_for(path) }}">{{ name }}</a>
+      {%- else -%}
+        <a href="{{ url_for(path) }}">{{ name }}</a>
+      {%- endif -%}
+      </li>
+    {%- endfor -%}
+    </ul>
+  </nav>
+  {%- endif -%}
 </header>

@@ -2,5 +2,4 @@
 Thumbs.db
 node_modules/
 *.log
-source/assets/
-_config.yml
+.vscode/

@@ -13,7 +13,8 @@
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
       })();
-      $('#load-disqus').remove(); // Remove load button after loading.
+      // Remove load button after loading.
+      document.getElementById('load-disqus').outerHTML='';
     }
   }
 </script>

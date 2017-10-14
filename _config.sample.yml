@@ -1,9 +1,0 @@
-# config
-avatar: /assets/images/avatar.png
-biourl: /about
-
-menu:
-- name: Home
-  url: /
-- name: Links
-  url: /links

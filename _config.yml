@@ -1,0 +1,7 @@
+menu:
+  Blog: /blog
+  Links: /blog/links.html
+  Guestbook: /blog/guestbook.html
+
+baidu_push: true
+night_mode: false
