@@ -42,6 +42,13 @@ baidu_push: true
 night_mode: false
 ```
 
+Features
+-----------
+
+1. Just blank-leaving, Keep It Simple Stupid.
+2. Black & White mode, Smooth toggling by config `night_mode` variable.
+3. Responsive `<figure>` tag design, better images typography layout (with [hexo-tag-figure](https://github.com/h404bi/hexo-tag-figure) plugin).
+
 Development
 -----------
 
