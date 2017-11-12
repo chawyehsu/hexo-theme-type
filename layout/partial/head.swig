@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="renderer" content="webkit">
   <meta name="generator" content="Hexo">
+  {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}">
+  {% endif %}
+  {% if page.description %}
   <meta name="description" content="{{ page.description }}">
+  {% endif %}
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ config.title }}</title>
   <link rel="icon" type="image/x-icon" href="{{ url_for('favicon.ico') }}">
   {{ css('static/type.css') }}

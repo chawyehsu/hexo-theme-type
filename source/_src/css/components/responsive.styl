@@ -1,0 +1,52 @@
+html
+  @media (min-width: 30rem)
+    font-size: $font-size-base-m
+
+  @media (min-width: 40rem)
+    font-size: $font-size-base-l
+
+.site-wrapper
+  @media (min-width: 30rem)
+    padding: 0 $gap-l
+
+.site-header
+  @media (min-width: 30rem)
+    padding: $gap-l 0
+  @media (min-width: 40rem)
+    margin-bottom: $gap-l
+
+.post-list
+  .post-list-item
+    a
+      @media (min-width: $content-wrap-wdith)
+        display: flex
+        justify-content: space-between
+
+.page-header
+  @media (min-width: 40rem)
+    margin-bottom: $gap-xl
+
+.page-content
+  figure
+    // figure tag images
+    @media (min-width: 30rem)
+      &.left, &.right
+        max-width: 40%
+
+      &.left
+        float: left
+        margin-right: $gap-l
+
+      &.right
+        float: right
+        margin-left: $gap-l
+
+    @media (min-width: 60rem)
+      &.left, &.right
+        max-width: 50%
+
+      &.left
+        margin-left: -25%
+
+      &.right
+        margin-right: -25%

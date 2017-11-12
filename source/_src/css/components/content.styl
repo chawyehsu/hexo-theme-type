@@ -3,9 +3,6 @@
   margin-bottom: $gap-l
   text-align: center
 
-  @media (min-width: 40rem)
-    margin-bottom: $gap-xl
-
   h1
     margin-bottom: 0
 
@@ -112,29 +109,6 @@
 
   figure
     text-align: center
-
-    // figure tag images
-    @media (min-width: 30rem)
-      &.left, &.right
-        max-width: 40%
-
-      &.left
-        float: left
-        margin-right: $gap-l
-
-      &.right
-        float: right
-        margin-left: $gap-l
-
-    @media (min-width: 60rem)
-      &.left, &.right
-        max-width: 50%
-
-      &.left
-        margin-left: -25%
-
-      &.right
-        margin-right: -25%
 
     figcaption
       color: $meta-color
