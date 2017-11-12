@@ -2,7 +2,7 @@ var CleanWebpackPlugin = require('clean-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: "./source/_src/css/main.styl",
+  entry: "./src/css/main.styl",
   output: {
     path: __dirname + "/source/static",
     publicPath: "",
