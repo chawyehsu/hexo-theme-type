@@ -10,6 +10,8 @@ Hexo theme, Type!
 Installation
 ------------
 
+**NOTICE:** This theme design for hexo site in sub-directory. If your hexo site is in root directory, do your own changes to make it be compatible.
+
 **Install**
 
 ``` sh
