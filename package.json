@@ -5,7 +5,7 @@
   "scripts": {
     "build": "./node_modules/.bin/webpack -p",
     "dev": "./node_modules/.bin/webpack --watch",
-    "lint": "./node_modules/.bin/stylint ./source/_src/css"
+    "lint": "./node_modules/.bin/stylint ./src/css"
   },
   "repository": {
     "type": "git",
