@@ -15,4 +15,7 @@
   <link rel="dns-prefetch" href="//fonts.gstatic.com">
   <link rel="icon" type="image/x-icon" href="{{ url_for('favicon.ico') }}">
   {{ css('static/type.css') }}
+  {%- if theme.night_mode.auto -%}
+  {{ partial('scripts/auto-nightmode') }}
+  {% endif %}
 </head>

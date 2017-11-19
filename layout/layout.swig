@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.language || config.language }}"{% if page.nightmode || theme.night_mode %} class="night-mode"{% endif %}>
+<html lang="{{ page.language || config.language }}" class="{% if page.nightmode || theme.night_mode.force %} night-mode{% endif %}{% if page.serif || theme.force_serif %} serif{% endif %}">
 {{ partial('partial/head') }}
 <body>
 <div id="site-wrapper" class="site-wrapper">

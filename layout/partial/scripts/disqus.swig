@@ -1,8 +1,8 @@
-{%- if config.disqus_shortname && page.comments -%}
+{%- if (config.disqus_shortname || theme.disqus_shortname) && page.comments -%}
 <script>
   var disqus = {
     load : function disqus(){
-      var disqus_shortname = '{{ config.disqus_shortname }}';
+      var disqus_shortname = '{{ config.disqus_shortname || theme.disqus_shortname }}';
       var disqus_url = '{{ url }}';
       var disqus_title = {{ JSON.stringify(page.title) }};
 

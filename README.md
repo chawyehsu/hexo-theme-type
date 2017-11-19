@@ -39,17 +39,24 @@ menu:
   Links: /blog/links.html
   Guestbook: /blog/guestbook.html
 
-# Miscellaneous
+force_serif: false
+night_mode:
+  auto: true
+  force: false
+
+# Third-party services
 baidu_push: true
-night_mode: false
+disqus_shortname: 
+google_analytics_id: 
 ```
 
 Features
 -----------
 
 1. Just blank-leaving, Keep It Simple Stupid.
-2. Black & White mode, Smooth toggling by config `night_mode` variable.
-3. Responsive `<figure>` tag design, better images typography layout (with [hexo-tag-figure](https://github.com/h404bi/hexo-tag-figure) plugin).
+2. Sans-Serif & Serif fonts toggling by config `force_serif` variable (Default is Sans-Serif).
+3. Black(Day) & White(Night) mode, Smooth toggling by config `night_mode` variables (Default is White).
+4. Responsive `<figure>` tag design, better images typography layout (with [hexo-tag-figure](https://github.com/h404bi/hexo-tag-figure) plugin).
 
 Development
 -----------
