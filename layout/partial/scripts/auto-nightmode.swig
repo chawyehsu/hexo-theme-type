@@ -9,7 +9,7 @@
 
   function isNight() {
     var hour = (new Date()).getHours();
-    var isNightTime = hour < 6 && hour > 21;
+    var isNightTime = hour < 6 || hour > 21;
     return isNightTime;
   }
 
