@@ -4,7 +4,7 @@ menu:
   Links: /blog/links.html
   Guestbook: /blog/guestbook.html
 
-force_serif: true
+force_serif: false
 night_mode:
   auto: true
   force: false
