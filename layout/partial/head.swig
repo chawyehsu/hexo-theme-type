@@ -12,6 +12,7 @@
   <meta name="description" content="{{ page.description }}">
   {% endif %}
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ config.title }}</title>
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
   <link rel="icon" type="image/x-icon" href="{{ url_for('favicon.ico') }}">
   {{ css('static/type.css') }}
 </head>
