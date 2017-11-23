@@ -4,9 +4,9 @@ menu:
   Links: /blog/links.html
   Guestbook: /blog/guestbook.html
 
-force_serif: false
+force_serif: true
 night_mode:
-  auto: true
+  auto: false
   force: false
 
 # Third-party services

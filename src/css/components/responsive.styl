@@ -1,35 +1,54 @@
 html
-  @media (min-width: 30rem)
+  @media (min-width: $mid-wrap-wdith)
     font-size: $font-size-base-m
 
-  @media (min-width: 40rem)
+  @media (min-width: $max-wrap-wdith)
     font-size: $font-size-base-l
 
+
+
 .site-wrapper
-  @media (min-width: 30rem)
+  @media (min-width: $mid-wrap-wdith)
     padding: 0 $gap-l
 
 .site-header
-  @media (min-width: 30rem)
-    padding: $gap-l 0
-  @media (min-width: 40rem)
+  @media (min-width: $mid-wrap-wdith)
+    padding: $gap-l 0 0
+  @media (min-width: $max-wrap-wdith)
     margin-bottom: $gap-l
 
 .post-list
   .post-list-item
     a
-      @media (min-width: $content-wrap-wdith)
+      @media (min-width: $max-wrap-wdith)
         display: flex
         justify-content: space-between
 
 .page-header
-  @media (min-width: 40rem)
+  @media (min-width: $mid-wrap-wdith)
+    margin-bottom: $gap-l
+  @media (min-width: $max-wrap-wdith)
     margin-bottom: $gap-xl
 
 .page-content
+
+  blockquote
+    @media (min-width: $mid-wrap-wdith)
+      padding-left: $gap-l
+
+  ol, ul
+    @media (min-width: $mid-wrap-wdith)
+      margin-bottom: $gap-l
+      padding-left: $gap-l
+
+  hr
+    @media (min-width: $mid-wrap-wdith)
+      margin: 0 auto $gap-l + $gap-m
+      padding-top: $gap-l
+
   figure
     // figure tag images
-    @media (min-width: 30rem)
+    @media (min-width: $mid-wrap-wdith)
       &.left, &.right
         max-width: 40%
 

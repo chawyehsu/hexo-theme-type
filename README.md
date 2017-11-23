@@ -4,8 +4,7 @@ Hexo theme, Type!
 > TYPE, a concise Hexo theme, focus on typography, heavily inspired by 
 > [Daniel Eden's website](https://daneden.me).
 
-[![hexo](https://img.shields.io/badge/hexo-%3E%3D3.0-blue.svg?style=flat-square)](https://hexo.io)
-[![license](https://img.shields.io/github/license/h404bi/hexo-theme-type.svg?style=flat-square)](LICENSE)
+[![hexo](https://img.shields.io/badge/hexo-%3E%3D3.0-blue.svg?style=flat-square)](https://hexo.io) [![GitHub release](https://img.shields.io/github/release/h404bi/hexo-theme-type.svg?style=flat-square)](https://github.com/h404bi/hexo-theme-type) [![license](https://img.shields.io/github/license/h404bi/hexo-theme-type.svg?style=flat-square)](LICENSE)
 
 Installation
 ------------

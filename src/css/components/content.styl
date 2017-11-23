@@ -1,6 +1,6 @@
 // Content title
 .page-header
-  margin-bottom: $gap-l
+  margin-bottom: $gap-m
   text-align: center
 
   h1
@@ -34,11 +34,11 @@
   blockquote
     border-left: 2px solid $highlight-color
     font-style: italic
-    padding-left: $gap-l
+    padding-left: $gap-m
 
   ol, ul
-    margin-bottom: $gap-l
-    padding-left: $gap-l
+    margin-bottom: $gap-m
+    padding-left: $gap-m * 1.5 /* fix list-style overflow */
 
     p
       margin-bottom: 0
@@ -79,13 +79,13 @@
   hr
     border: 0
     border-bottom: 2px solid $meta-color
-    margin: 0 auto $gap-xl
+    margin: 0 auto $gap-l
     opacity: .5
-    padding-top: $gap-l
+    padding-top: $gap-m
     width: 6rem
 
     &.footnotes-sep
-      margin-top: $gap-l
+      margin-top: $gap-m
 
   sub, sup
     font-size: $font-size-sub-sup
@@ -105,7 +105,7 @@
 
   // Add margin-bottom for images without p tag warp (html tag images)
   & > img
-    margin-bottom: $gap-l
+    margin-bottom: $gap-m
 
   figure
     text-align: center
