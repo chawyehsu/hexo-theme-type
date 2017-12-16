@@ -1,3 +1,4 @@
+{%- if theme.night_mode.auto -%}
 <script>
 (function() {
   "use strict";
@@ -22,3 +23,4 @@
   }
 }());
 </script>
+{% endif %}
