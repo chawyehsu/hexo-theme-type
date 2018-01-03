@@ -6,10 +6,10 @@ menu:
 
 force_serif: true
 night_mode:
-  auto: false
+  auto: true
   force: false
 
 # Third-party services
 baidu_push: true
-disqus_shortname: 
-google_analytics_id: 
+disqus_shortname:
+google_analytics_id:
