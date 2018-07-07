@@ -1,3 +1,6 @@
 <footer id="site-footer" class="site-footer wrap">
-  <p>&copy; {{ date(Date.now(), 'YYYY') }} {{ config.author }}, unless otherwise noted.</p>
+  <p>&copy; {{ date(Date.now(), 'YYYY') }} {{ config.author }}, unless otherwise noted.
+  Change <a href="javascript:void(0)" class="change-mode">mode</a> or
+  <a href="javascript:void(0)" class="change-font">font</a>.
+  </p>
 </footer>
